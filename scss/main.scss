@@ -1,1 +1,93 @@
 @import 'reset';
+
+body {
+  header {
+    width: 100%;
+    height: 63px;
+    background-color: #053f05;
+
+    .content {
+      max-width: 1000px;
+      height: 50px;
+      padding-top: 13px;
+      margin: auto;
+      display: flex;
+
+      .logo {
+        min-width: 130px;
+        background: #e6f3e5 url("../image/ida-logo.svg") no-repeat center;
+        background-size: 114px;
+        border-radius: 5px 5px 0 0;
+        margin-bottom: 1px;
+      }
+      .menu_vertical_bar_right {
+        margin-left: 159px;
+
+        ul {
+          display: flex;
+
+          li {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+
+            a {
+              white-space: nowrap;
+              color: white;
+              text-decoration: none;
+              transition: all .2s ease-in;
+
+              &.active {
+                color: #77b077;
+                padding-bottom: 5px;
+                border-bottom: 2px solid #77b077;
+              }
+
+              &:hover, &:active {
+                color: #77b077;
+              }
+
+              &:active{
+                padding-bottom: 5px;
+                border-bottom: 2px solid #77b077;
+              }
+
+            }
+          }
+        }
+      }
+
+      .donate {
+        min-width: 105px;
+        color: #053f05;
+        background-color: #ffd322;
+        text-decoration: none;
+        border-radius: 5px 5px 0px 0px;
+        cursor: pointer;
+        margin-left: 5px;
+        font-weight: 700;
+        border: none;
+        transition: all .2s ease-in;
+
+        &:hover {
+          color: #e6f3e5;
+          background-color: #fcb926;
+        }
+      }
+
+      .search {
+        min-width: 20px;
+        margin-left: 15px;
+        background-image: url("../image/search.svg");
+        border: none;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center;
+        background-color: inherit;
+      }
+    }
+  }
+}
