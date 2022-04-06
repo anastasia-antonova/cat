@@ -55,7 +55,9 @@ table {
 body header {
   width: 100%;
   height: 63px;
-  background-color: #053f05;
+  background-color: #313141;
+  position: fixed;
+  z-index: 1;
 }
 body header .content {
   max-width: 1000px;
@@ -110,7 +112,7 @@ body header .content .donate {
   text-decoration: none;
   border-radius: 5px 5px 0px 0px;
   cursor: pointer;
-  margin-left: 5px;
+  margin-left: 15px;
   font-weight: 700;
   border: none;
   transition: all 0.2s ease-in;
@@ -125,9 +127,85 @@ body header .content .search {
   background-image: url("../image/search.svg");
   border: none;
   background-repeat: no-repeat;
-  background-size: 20px;
+  background-size: 19px;
   background-position: center;
   background-color: inherit;
+  cursor: pointer;
+}
+body .banner .nav1, body .banner .nav2 {
+  width: 100%;
+  height: 60px;
+  background-color: #6BB547;
+}
+body .banner .nav1 {
+  border-top: 0.7px solid white;
+  padding-top: 63px;
+}
+body .banner .nav1 ul {
+  display: flex;
+}
+body .banner .nav1 ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  color: #e6f3e5;
+  margin: 0 auto;
+}
+body .banner .nav1 ul li a {
+  color: #e6f3e5;
+  text-decoration: none;
+  padding: 1.2rem 0rem 0.15rem 0rem;
+}
+body .banner .nav1 ul li a:hover {
+  color: black;
+}
+body .banner .nav2 ul {
+  display: flex;
+}
+body .banner .nav2 ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  color: #e6f3e5;
+  margin-right: 15px;
+}
+body .banner .nav2 ul li a {
+  color: #e6f3e5;
+  text-decoration: none;
+  padding: 1.2rem 0rem 0.15rem 0rem;
+}
+body .banner .nav2 ul li a:hover {
+  color: black;
+}
+body .banner .image_banner {
+  width: 100%;
+  height: 356px;
+  background-color: yellow;
+  background-image: url("../image/community-cats-campaign-hero-resized-9.9.19.56da5a781b18cbbe581ae2cb54edcb93.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  background-position-y: -50px;
+}
+body .banner .image_banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(180, 180, 180, 0), rgba(180, 180, 180, 0), rgba(6, 6, 14, 0.49));
+}
+body .banner .image_banner h1 {
+  font-weight: bold;
+  font-size: 2.75rem;
+  color: #e6f3e5;
+  margin-bottom: 0.5rem;
+  line-height: 2.93rem;
+  padding-left: 0.9375rem;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 50%;
+  margin-left: -31.25rem;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
