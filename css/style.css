@@ -603,6 +603,8 @@ body .footer_banner .text_footer {
   height: 352px;
   margin-left: 712px;
   padding: 48px 0;
+  position: relative;
+  z-index: 1;
 }
 body .footer_banner .text_footer h2 {
   font-family: "Lilita One", sans-serif;

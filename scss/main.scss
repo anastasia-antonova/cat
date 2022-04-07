@@ -251,6 +251,8 @@ body {
       height: 352px;
       margin-left: 712px;
       padding: 48px 0;
+      position: relative;
+      z-index: 1;
 
       h2{
         font-family: 'Lilita One', sans-serif;
