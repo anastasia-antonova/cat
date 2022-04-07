@@ -1,4 +1,6 @@
 @import 'reset';
+@import 'fonts/ubuntu';
+@import 'fonts/lilia-one';
 
 body {
 
@@ -38,6 +40,9 @@ body {
             cursor: pointer;
 
             a {
+              font-family: 'Ubuntu', serif;
+              font-size: 14px;
+              font-weight: 700;
               white-space: nowrap;
               color: white;
               text-decoration: none;
@@ -184,5 +189,42 @@ body {
         z-index: 2;
       }
     }
+
   }
+
+  .text {
+    width: 100%;
+    height: 236px;
+    padding: 75px 16px;
+
+    .text_in {
+      width: 970px;
+      height: 220px;
+      padding: 0 15px;
+      margin: auto;
+
+      h2 {
+        height: 48px;
+        color: #2D2378;
+        font-family: 'Ubuntu', serif;
+        font-weight: 700;
+        font-size: 40px;
+        padding-bottom: 28px;
+        margin-bottom: 8px;
+
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Ubuntu', serif;
+        color: rgb(68, 68, 68);
+        line-height: 24px;
+        margin-bottom: 16px;
+
+      }
+    }
+
+  }
+
 }
