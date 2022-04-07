@@ -9,7 +9,7 @@ body {
     height: 63px;
     background-color: #313141;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 
     .content {
       max-width: 1000px;
@@ -186,7 +186,7 @@ body {
         bottom: 3.5rem;
         left: 50%;
         margin-left: -31.25rem;
-        z-index: 2;
+        z-index: 1;
       }
     }
 
@@ -195,7 +195,7 @@ body {
   .text {
     width: 100%;
     height: 236px;
-    padding: 75px 16px;
+    padding: 75px 0;
 
     .text_in {
       width: 970px;
@@ -225,6 +225,68 @@ body {
       }
     }
 
+  }
+
+  .footer_banner {
+    width: 100%;
+    height: 448px;
+    background-color: rgb(1, 0, 26);
+    background-image: url("../image/baby_cat_1799835_640.adb0be869894bed5411020cb98d292f5.jpg");
+    background-repeat: no-repeat;
+    background-size: 855px;
+    position: relative;
+
+    &::after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to right, #f000 0, #1500ff00 40%, #01001a 60%);
+    }
+
+    .text_footer {
+      width: 500px;
+      height: 352px;
+      margin-left: 712px;
+      padding: 48px 0;
+
+      h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 35px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 32px;
+      }
+
+      button {
+        padding: 16px 24px;
+        font-family: 'Ubuntu', serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: rgb(45, 35, 120);
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(255, 222, 0);
+        cursor: pointer;
+        margin-bottom: 24px;
+
+        &:hover {
+          background-color: #FFC800;
+          color: #fff;
+        }
+
+      }
+
+      p{
+        color: rgb(255, 255, 255);
+        font-family: 'Ubuntu', serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
   }
 
 }
