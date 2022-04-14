@@ -3,6 +3,7 @@
 @import 'fonts/lilia-one';
 
 body {
+  padding-top: 63px;
 
   header {
     width: 100%;
@@ -10,6 +11,7 @@ body {
     background-color: #313141;
     position: fixed;
     z-index: 2;
+    top: 0;
 
     .content {
       max-width: 1000px;
@@ -18,15 +20,18 @@ body {
       margin: auto;
       display: flex;
 
+
       .logo {
         min-width: 130px;
-        background: #e6f3e5 url("../image/ida-logo.svg") no-repeat center;
+        background: #fff url("../image/ida-logo.svg") no-repeat center;
         background-size: 114px;
         border-radius: 5px 5px 0 0;
         margin-bottom: 1px;
+        margin-left: 16px;
       }
+
       .menu_vertical_bar_right {
-        margin-left: 159px;
+        margin-left: 140px;
 
         ul {
           display: flex;
@@ -35,7 +40,7 @@ body {
             list-style: none;
             display: flex;
             justify-content: space-around;
-            padding: 5px;
+            padding-right: 16px;
             margin-top: 10px;
             cursor: pointer;
 
@@ -58,7 +63,7 @@ body {
                 color: #77b077;
               }
 
-              &:active{
+              &:active {
                 padding-bottom: 5px;
                 border-bottom: 2px solid #77b077;
               }
@@ -70,8 +75,8 @@ body {
 
       .donate {
         min-width: 105px;
-        color: #053f05;
-        background-color: #ffd322;
+        color: #2D2378;
+        background-color: #FFDE00;
         text-decoration: none;
         border-radius: 5px 5px 0px 0px;
         cursor: pointer;
@@ -82,7 +87,7 @@ body {
 
         &:hover {
           color: #e6f3e5;
-          background-color: #fcb926;
+          background-color: #FFC800;
         }
       }
 
@@ -106,12 +111,13 @@ body {
       height: 60px;
       background-color: #6BB547;
     }
+
     .nav1 {
       border-top: 0.7px solid white;
-      padding-top: 63px;
 
       ul {
         display: flex;
+
         li {
           list-style: none;
           display: flex;
@@ -125,7 +131,7 @@ body {
             padding: 1.2rem 0rem 0.15rem 0rem;
 
             &:hover {
-              color: black;
+              color: #313141;
             }
           }
         }
@@ -136,6 +142,8 @@ body {
 
       ul {
         display: flex;
+        margin-left: 15px;
+
         li {
           list-style: none;
           display: flex;
@@ -149,7 +157,7 @@ body {
             padding: 1.2rem 0rem 0.15rem 0rem;
 
             &:hover {
-              color: black;
+              color: #313141;
             }
           }
         }
@@ -157,6 +165,7 @@ body {
 
 
     }
+
     .image_banner {
       width: 100%;
       height: 356px;
@@ -176,9 +185,10 @@ body {
       }
 
       h1 {
-        font-weight: bold;
-        font-size: 2.75rem;
-        color: #e6f3e5;
+        font-weight: 400;
+        font-family: "Lilita One", sans-serif;
+        font-size: 44px;
+        color: #fff;
         margin-bottom: 0.5rem;
         line-height: 2.93rem;
         padding-left: 0.9375rem;
@@ -236,7 +246,7 @@ body {
     background-size: 855px;
     position: relative;
 
-    &::after{
+    &::after {
       content: '';
       width: 100%;
       height: 100%;
@@ -254,7 +264,7 @@ body {
       position: relative;
       z-index: 1;
 
-      h2{
+      h2 {
         font-family: 'Lilita One', sans-serif;
         font-size: 35px;
         font-weight: 400;
@@ -281,7 +291,7 @@ body {
 
       }
 
-      p{
+      p {
         color: rgb(255, 255, 255);
         font-family: 'Ubuntu', serif;
         font-size: 18px;
@@ -291,4 +301,209 @@ body {
     }
   }
 
+  footer {
+    height: 288px;
+    padding-bottom: 48px;
+    background-color: #313141;
+    display: flex;
+    justify-content: space-around;
+
+    .box {
+      max-width: 1000px;
+      display: flex;
+
+      .footerbox1 {
+        width: 333px;
+        height: 100%;
+        padding-top: 24px;
+        padding-left: 15px;
+
+        .menu {
+
+          li {
+            list-style: none;
+            display: inline;
+            margin-right: 15px;
+
+            a {
+              font-family: 'Ubuntu', serif;
+              font-size: 12px;
+              font-weight: 400;
+              color: #fff;
+              text-decoration: none;
+
+              &:hover {
+                color: #6BB547;
+              }
+            }
+          }
+        }
+
+        .adress {
+          margin-top: 123px;
+          margin-bottom: 16px;
+
+          li {
+            font-family: 'Ubuntu', serif;
+            font-size: 11px;
+            font-weight: 400;
+            color: white;
+            line-height: 14.4px;
+
+          }
+        }
+
+        p {
+          font-family: 'Ubuntu', serif;
+          font-size: 8px;
+          font-weight: 400;
+          color: white;
+        }
+
+      }
+
+      .footerbox2 {
+        width: 333px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        a {
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          background-size: cover;
+          background-position: center;
+          margin-top: 165px;
+          margin-right: 7px;
+          opacity: 70%;
+
+          &:hover {
+            opacity: 100%;
+          }
+
+          &.icon {
+            &_facebook {
+              background-image: url("../image/icons-social-facebook.png");
+            }
+
+            &_twitter {
+              background-image: url("../image/icons-social-twitter.png");
+            }
+
+            &_instagram {
+              background-image: url("../image/icons-social-instagram.png");
+            }
+          }
+        }
+      }
+
+      .footerbox3 {
+        width: 220px;
+        height: 100%;
+        padding-top: 24px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 110px;
+        justify-content: space-between;
+
+        p {
+          font-family: 'Ubuntu', serif;
+          font-weight: 400;
+          font-size: 12px;
+          color: white;
+          text-align: center;
+          margin-bottom: 16px;
+
+          span {
+            color: #FFDE00;
+            display: block;
+          }
+
+        }
+
+        button {
+          width: 100%;
+          height: 46.8px;
+          border-radius: 5px;
+          background-color: #FFDE00;
+          border: none;
+          font-family: 'Ubuntu', serif;
+          font-size: 12px;
+          font-weight: 400;
+          color: #2D2378;
+          cursor: pointer;
+
+          &:hover {
+            color: white;
+            background-color: #FFC800;
+          }
+        }
+
+        .content_footer {
+          height: 200px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          flex-direction: column;
+
+          a {
+            font-family: 'Ubuntu', serif;
+            color: rgba(255, 255, 255, 0.38);
+            text-decoration: none;
+
+            &:hover {
+              color: white;
+            }
+          }
+
+          .designerwith {
+            font-size: 8px;
+            margin-right: 29px;
+            margin-bottom: 2px;
+
+            span {
+              font-size: 10px;
+              margin-bottom: 16px;
+              display: block;
+              padding-top: 2px;
+            }
+          }
+
+          .return {
+            margin-bottom: 45px;
+            font-size: 14px;
+          }
+        }
+
+        .social {
+          position: fixed;
+          bottom: 54px;
+          left: 0;
+          a {
+            width: 38px;
+            height: 32px;
+            display: block;
+            background-size: cover;
+          }
+
+          .facebook {
+            background-image: url("../image/icons-share-facebook.png");
+            border-top-right-radius: 10px;
+          }
+
+          .twitter {
+            background-image: url("../image/icons-share-twitter.png");
+
+          }
+
+
+        }
+
+      }
+
+    }
+  }
+
 }
+
