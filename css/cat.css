@@ -414,7 +414,7 @@ body header .content {
 }
 body header .content .logo {
   min-width: 130px;
-  background: #fff url("../image/ida-logo.svg") no-repeat center;
+  background: #fff url("../../image/ida-logo.svg") no-repeat center;
   background-size: 114px;
   border-radius: 5px 5px 0 0;
   margin-bottom: 1px;
@@ -474,7 +474,7 @@ body header .content .donate:hover {
 body header .content .search {
   min-width: 20px;
   margin-left: 15px;
-  background-image: url("../image/search.svg");
+  background-image: url("../../image/search.svg");
   border: none;
   background-repeat: no-repeat;
   background-size: 19px;
@@ -502,11 +502,19 @@ body .banner .nav1 ul li {
 }
 body .banner .nav1 ul li a {
   color: #e6f3e5;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Ubuntu", serif;
   text-decoration: none;
   padding: 1.2rem 0rem 0.15rem 0rem;
+  text-transform: uppercase;
 }
 body .banner .nav1 ul li a:hover {
   color: #313141;
+}
+body .banner .nav1 ul li a.active2 {
+  color: #313141;
+  border-bottom: 2px solid #313141;
 }
 body .banner .nav2 ul {
   display: flex;
@@ -523,6 +531,10 @@ body .banner .nav2 ul li a {
   color: #e6f3e5;
   text-decoration: none;
   padding: 1.2rem 0rem 0.15rem 0rem;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Ubuntu", serif;
+  text-transform: uppercase;
 }
 body .banner .nav2 ul li a:hover {
   color: #313141;
@@ -531,7 +543,7 @@ body .banner .image_banner {
   width: 100%;
   height: 356px;
   background-color: yellow;
-  background-image: url("../image/community-cats-campaign-hero-resized-9.9.19.56da5a781b18cbbe581ae2cb54edcb93.jpg");
+  background-image: url("../../image/community-cats.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
@@ -560,17 +572,14 @@ body .banner .image_banner h1 {
 }
 body .text {
   width: 100%;
-  height: 236px;
   padding: 75px 0;
 }
 body .text .text_in {
   width: 970px;
-  height: 220px;
   padding: 0 15px;
   margin: auto;
 }
 body .text .text_in h2 {
-  height: 48px;
   color: #2D2378;
   font-family: "Ubuntu", serif;
   font-weight: 700;
@@ -590,7 +599,7 @@ body .footer_banner {
   width: 100%;
   height: 448px;
   background-color: #01001a;
-  background-image: url("../image/baby_cat_1799835_640.adb0be869894bed5411020cb98d292f5.jpg");
+  background-image: url("../../image/baby_cat_1799835_640.adb0be869894bed5411020cb98d292f5.jpg");
   background-repeat: no-repeat;
   background-size: 855px;
   position: relative;
@@ -711,13 +720,13 @@ body footer .box .footerbox2 a:hover {
   opacity: 100%;
 }
 body footer .box .footerbox2 a.icon_facebook {
-  background-image: url("../image/icons-social-facebook.png");
+  background-image: url("../../image/icons-social-facebook.png");
 }
 body footer .box .footerbox2 a.icon_twitter {
-  background-image: url("../image/icons-social-twitter.png");
+  background-image: url("../../image/icons-social-twitter.png");
 }
 body footer .box .footerbox2 a.icon_instagram {
-  background-image: url("../image/icons-social-instagram.png");
+  background-image: url("../../image/icons-social-instagram.png");
 }
 body footer .box .footerbox3 {
   width: 220px;
@@ -798,11 +807,11 @@ body footer .box .footerbox3 .social a {
   background-size: cover;
 }
 body footer .box .footerbox3 .social .facebook {
-  background-image: url("../image/icons-share-facebook.png");
+  background-image: url("../../image/icons-share-facebook.png");
   border-top-right-radius: 10px;
 }
 body footer .box .footerbox3 .social .twitter {
-  background-image: url("../image/icons-share-twitter.png");
+  background-image: url("../../image/icons-share-twitter.png");
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=cat.css.map */

@@ -1,0 +1,20 @@
+@import 'reset';
+@import 'fonts/ubuntu';
+@import 'fonts/lilia-one';
+@import "mixins/header";
+@import "mixins/banner";
+@import "mixins/text";
+@import "mixins/foter_banner";
+@import "mixins/footer";
+
+body {
+  padding-top: 63px;
+
+   @include header;
+   @include banner("../../image/pexels.jpg");
+   @include text;
+   @include footerBanner("../../image/dolphin.jpg");
+   @include footer;
+
+
+}

@@ -394,12 +394,16 @@ table {
   src: url(https://fonts.gstatic.com/s/lilitaone/v11/i7dPIFZ9Zz-WBtRtedDbYEF8RXi4EwQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+body {
+  padding-top: 63px;
+}
 body header {
   width: 100%;
   height: 63px;
   background-color: #313141;
   position: fixed;
   z-index: 2;
+  top: 0;
 }
 body header .content {
   max-width: 1000px;
@@ -410,13 +414,14 @@ body header .content {
 }
 body header .content .logo {
   min-width: 130px;
-  background: #e6f3e5 url("../image/ida-logo.svg") no-repeat center;
+  background: #fff url("../../image/ida-logo.svg") no-repeat center;
   background-size: 114px;
   border-radius: 5px 5px 0 0;
   margin-bottom: 1px;
+  margin-left: 16px;
 }
 body header .content .menu_vertical_bar_right {
-  margin-left: 159px;
+  margin-left: 140px;
 }
 body header .content .menu_vertical_bar_right ul {
   display: flex;
@@ -425,7 +430,7 @@ body header .content .menu_vertical_bar_right ul li {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  padding: 5px;
+  padding-right: 16px;
   margin-top: 10px;
   cursor: pointer;
 }
@@ -452,8 +457,8 @@ body header .content .menu_vertical_bar_right ul li a:active {
 }
 body header .content .donate {
   min-width: 105px;
-  color: #053f05;
-  background-color: #ffd322;
+  color: #2D2378;
+  background-color: #FFDE00;
   text-decoration: none;
   border-radius: 5px 5px 0px 0px;
   cursor: pointer;
@@ -464,12 +469,12 @@ body header .content .donate {
 }
 body header .content .donate:hover {
   color: #e6f3e5;
-  background-color: #fcb926;
+  background-color: #FFC800;
 }
 body header .content .search {
   min-width: 20px;
   margin-left: 15px;
-  background-image: url("../image/search.svg");
+  background-image: url("../../image/search.svg");
   border: none;
   background-repeat: no-repeat;
   background-size: 19px;
@@ -484,7 +489,6 @@ body .banner .nav1, body .banner .nav2 {
 }
 body .banner .nav1 {
   border-top: 0.7px solid white;
-  padding-top: 63px;
 }
 body .banner .nav1 ul {
   display: flex;
@@ -498,14 +502,23 @@ body .banner .nav1 ul li {
 }
 body .banner .nav1 ul li a {
   color: #e6f3e5;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Ubuntu", serif;
   text-decoration: none;
   padding: 1.2rem 0rem 0.15rem 0rem;
+  text-transform: uppercase;
 }
 body .banner .nav1 ul li a:hover {
-  color: black;
+  color: #313141;
+}
+body .banner .nav1 ul li a.active2 {
+  color: #313141;
+  border-bottom: 2px solid #313141;
 }
 body .banner .nav2 ul {
   display: flex;
+  margin-left: 15px;
 }
 body .banner .nav2 ul li {
   list-style: none;
@@ -518,15 +531,19 @@ body .banner .nav2 ul li a {
   color: #e6f3e5;
   text-decoration: none;
   padding: 1.2rem 0rem 0.15rem 0rem;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Ubuntu", serif;
+  text-transform: uppercase;
 }
 body .banner .nav2 ul li a:hover {
-  color: black;
+  color: #313141;
 }
 body .banner .image_banner {
   width: 100%;
   height: 356px;
   background-color: yellow;
-  background-image: url("../image/community-cats-campaign-hero-resized-9.9.19.56da5a781b18cbbe581ae2cb54edcb93.jpg");
+  background-image: url("../../image/pexels.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
@@ -540,9 +557,10 @@ body .banner .image_banner::after {
   background: linear-gradient(rgba(180, 180, 180, 0), rgba(180, 180, 180, 0), rgba(6, 6, 14, 0.49));
 }
 body .banner .image_banner h1 {
-  font-weight: bold;
-  font-size: 2.75rem;
-  color: #e6f3e5;
+  font-weight: 400;
+  font-family: "Lilita One", sans-serif;
+  font-size: 44px;
+  color: #fff;
   margin-bottom: 0.5rem;
   line-height: 2.93rem;
   padding-left: 0.9375rem;
@@ -554,17 +572,14 @@ body .banner .image_banner h1 {
 }
 body .text {
   width: 100%;
-  height: 236px;
   padding: 75px 0;
 }
 body .text .text_in {
   width: 970px;
-  height: 220px;
   padding: 0 15px;
   margin: auto;
 }
 body .text .text_in h2 {
-  height: 48px;
   color: #2D2378;
   font-family: "Ubuntu", serif;
   font-weight: 700;
@@ -584,7 +599,7 @@ body .footer_banner {
   width: 100%;
   height: 448px;
   background-color: #01001a;
-  background-image: url("../image/baby_cat_1799835_640.adb0be869894bed5411020cb98d292f5.jpg");
+  background-image: url("../../image/dolphin.jpg");
   background-repeat: no-repeat;
   background-size: 855px;
   position: relative;
@@ -637,24 +652,166 @@ body .footer_banner .text_footer p {
   line-height: 24px;
 }
 body footer {
-  width: 100%;
   height: 288px;
   padding-bottom: 48px;
   background-color: #313141;
+  display: flex;
+  justify-content: space-around;
 }
-body footer .footerbox1 {
-  width: 1000px;
-  height: 93px;
-  background-color: #77b077;
-  padding: 24px 0;
-  margin: auto;
+body footer .box {
+  max-width: 1000px;
+  display: flex;
 }
-body footer .footerbox1 ul li {
+body footer .box .footerbox1 {
+  width: 333px;
+  height: 100%;
+  padding-top: 24px;
+  padding-left: 15px;
+}
+body footer .box .footerbox1 .menu li {
   list-style: none;
+  display: inline;
+  margin-right: 15px;
 }
-body footer .footerbox1 ul li a {
+body footer .box .footerbox1 .menu li a {
+  font-family: "Ubuntu", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
   text-decoration: none;
+}
+body footer .box .footerbox1 .menu li a:hover {
+  color: #6BB547;
+}
+body footer .box .footerbox1 .adress {
+  margin-top: 123px;
+  margin-bottom: 16px;
+}
+body footer .box .footerbox1 .adress li {
+  font-family: "Ubuntu", serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: white;
+  line-height: 14.4px;
+}
+body footer .box .footerbox1 p {
+  font-family: "Ubuntu", serif;
+  font-size: 8px;
+  font-weight: 400;
   color: white;
 }
+body footer .box .footerbox2 {
+  width: 333px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+body footer .box .footerbox2 a {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  margin-top: 165px;
+  margin-right: 7px;
+  opacity: 70%;
+}
+body footer .box .footerbox2 a:hover {
+  opacity: 100%;
+}
+body footer .box .footerbox2 a.icon_facebook {
+  background-image: url("../../image/icons-social-facebook.png");
+}
+body footer .box .footerbox2 a.icon_twitter {
+  background-image: url("../../image/icons-social-twitter.png");
+}
+body footer .box .footerbox2 a.icon_instagram {
+  background-image: url("../../image/icons-social-instagram.png");
+}
+body footer .box .footerbox3 {
+  width: 220px;
+  height: 100%;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 110px;
+  justify-content: space-between;
+}
+body footer .box .footerbox3 p {
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-bottom: 16px;
+}
+body footer .box .footerbox3 p span {
+  color: #FFDE00;
+  display: block;
+}
+body footer .box .footerbox3 button {
+  width: 100%;
+  height: 46.8px;
+  border-radius: 5px;
+  background-color: #FFDE00;
+  border: none;
+  font-family: "Ubuntu", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #2D2378;
+  cursor: pointer;
+}
+body footer .box .footerbox3 button:hover {
+  color: white;
+  background-color: #FFC800;
+}
+body footer .box .footerbox3 .content_footer {
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+body footer .box .footerbox3 .content_footer a {
+  font-family: "Ubuntu", serif;
+  color: rgba(255, 255, 255, 0.38);
+  text-decoration: none;
+}
+body footer .box .footerbox3 .content_footer a:hover {
+  color: white;
+}
+body footer .box .footerbox3 .content_footer .designerwith {
+  font-size: 8px;
+  margin-right: 29px;
+  margin-bottom: 2px;
+}
+body footer .box .footerbox3 .content_footer .designerwith span {
+  font-size: 10px;
+  margin-bottom: 16px;
+  display: block;
+  padding-top: 2px;
+}
+body footer .box .footerbox3 .content_footer .return {
+  margin-bottom: 45px;
+  font-size: 14px;
+}
+body footer .box .footerbox3 .social {
+  position: fixed;
+  bottom: 54px;
+  left: 0;
+}
+body footer .box .footerbox3 .social a {
+  width: 38px;
+  height: 32px;
+  display: block;
+  background-size: cover;
+}
+body footer .box .footerbox3 .social .facebook {
+  background-image: url("../../image/icons-share-facebook.png");
+  border-top-right-radius: 10px;
+}
+body footer .box .footerbox3 .social .twitter {
+  background-image: url("../../image/icons-share-twitter.png");
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=cetacean.css.map */

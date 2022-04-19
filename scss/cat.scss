@@ -1,0 +1,24 @@
+@import 'reset';
+@import 'fonts/ubuntu';
+@import 'fonts/lilia-one';
+@import "mixins/header";
+@import "mixins/banner";
+@import "mixins/text";
+@import "mixins/foter_banner";
+@import "mixins/footer";
+
+body {
+  padding-top: 63px;
+
+  @include header();
+
+  @include banner("../../image/community-cats.jpg");
+
+  @include text;
+
+  @include footerBanner("../../image/baby_cat_1799835_640.adb0be869894bed5411020cb98d292f5.jpg");
+
+  @include footer;
+
+}
+
