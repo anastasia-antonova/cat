@@ -397,6 +397,47 @@ table {
 body {
   padding-top: 63px;
 }
+body .title {
+  font-family: "Ubuntu", serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #2C2278;
+  border-bottom: 2px solid #2C2278;
+  padding-bottom: 10px;
+  line-height: 54px;
+  margin-bottom: 44px;
+}
+body .content_help {
+  display: flex;
+  justify-content: space-between;
+}
+body .button {
+  font-family: "Ubuntu", serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 24px;
+  color: #2d2378;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFDE00;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+body .button:hover {
+  background-color: #FFC800;
+  color: #fff;
+}
+body .card {
+  width: 320px;
+  padding: 0 4px;
+}
+body .img {
+  width: 200px;
+  margin: 0 60px;
+  margin-bottom: 28px;
+}
 body header {
   width: 100%;
   height: 63px;
@@ -710,6 +751,483 @@ body .how_help .content_help .card button {
   display: block;
   margin: auto;
   cursor: pointer;
+}
+body .can_do {
+  height: 600px;
+  padding: 50px 197.5px;
+  margin-bottom: 60px;
+}
+body .can_do .titl {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+body .can_do .titl h3 {
+  font-family: "Ubuntu", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2C2278;
+  padding-bottom: 10px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+body .can_do .titl a {
+  color: #6BB547;
+  text-decoration: none;
+  font-family: "Ubuntu", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .can_do .content_help .card {
+  border: 1px solid #f3f3f3;
+  height: 496px;
+  padding: 0;
+}
+body .can_do .content_help .card p {
+  text-align: left;
+  font-family: "Ubuntu", serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2C2278;
+  line-height: 26px;
+  margin-left: 26px;
+  margin-bottom: 50px;
+}
+body .can_do .content_help .card h4 {
+  font-family: "Ubuntu", serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: #2C2278;
+  text-transform: uppercase;
+  margin: 26px;
+}
+body .can_do .content_help .card .img1, body .can_do .content_help .card .img2, body .can_do .content_help .card .img3 {
+  width: 320px;
+  height: 248px;
+  background-size: cover;
+}
+body .can_do .content_help .card .img1 {
+  background-image: url("../image/dog_meat/blogmain-korean-dog.jpg");
+}
+body .can_do .content_help .card .img2 {
+  background-image: url("../image/dog_meat/blog-cage3.jpg");
+}
+body .can_do .content_help .card .img3 {
+  background-image: url("../image/dog_meat/blogbali..jpg");
+}
+body .can_do .content_help .card button {
+  font-family: "Ubuntu", serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFDE00;
+  display: block;
+  cursor: pointer;
+  margin-left: 148px;
+  text-transform: uppercase;
+}
+body .footer_banner {
+  width: 100%;
+  height: 448px;
+  background-color: #01001a;
+  background-image: url("../../image/dog_meat/upper-bg-5.png");
+  background-repeat: no-repeat;
+  background-size: 855px;
+  position: relative;
+}
+body .footer_banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #f000 0, #1500ff00 40%, #01001a 60%);
+}
+body .footer_banner .text_footer {
+  width: 500px;
+  height: 352px;
+  margin-left: 712px;
+  padding: 48px 0;
+  position: relative;
+  z-index: 1;
+}
+body .footer_banner .text_footer h2 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 32px;
+}
+body .footer_banner .text_footer button {
+  padding: 16px 24px;
+  font-family: "Ubuntu", serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #2d2378;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffde00;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+body .footer_banner .text_footer button:hover {
+  background-color: #FFC800;
+  color: #fff;
+}
+body .footer_banner .text_footer p {
+  color: white;
+  font-family: "Ubuntu", serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+body .footer_banner {
+  margin-top: 110px;
+  height: 544px;
+  background-size: 1040px;
+  background-position-x: -97px;
+}
+body .footer_banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #f000 0, #0f0b75 60%);
+}
+body .footer_banner .text_footer {
+  padding-top: 146px;
+}
+body .footer_banner .text_footer p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+body .can_do {
+  height: 600px;
+  padding: 50px 197.5px;
+  margin-bottom: 110px;
+}
+body .can_do .titl {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+body .can_do .titl h3 {
+  font-family: "Ubuntu", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2C2278;
+  padding-bottom: 10px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+body .can_do .titl a {
+  color: #6BB547;
+  text-decoration: none;
+  font-family: "Ubuntu", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .can_do .content_help .card {
+  border: 1px solid #f3f3f3;
+  height: 520px;
+  padding: 0;
+}
+body .can_do .content_help .card p {
+  height: 78px;
+  text-align: left;
+  font-family: "Ubuntu", serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2C2278;
+  line-height: 26px;
+  margin-left: 26px;
+  margin-bottom: 50px;
+}
+body .can_do .content_help .card h4 {
+  font-family: "Ubuntu", serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: #2C2278;
+  text-transform: uppercase;
+  margin: 26px;
+}
+body .can_do .content_help .card .img1, body .can_do .content_help .card .img2, body .can_do .content_help .card .img3 {
+  width: 320px;
+  height: 248px;
+  background-size: cover;
+}
+body .can_do .content_help .card .img1 {
+  background-image: url("../../image/dog_meat/blogmain-korean-dog.jpg");
+}
+body .can_do .content_help .card .img2 {
+  background-image: url("../../image/dog_meat/blog-cage3.jpg");
+}
+body .can_do .content_help .card .img3 {
+  background-image: url("../../image/dog_meat/blogbali..jpg");
+}
+body .can_do .content_help .card button {
+  font-family: "Ubuntu", serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFDE00;
+  display: block;
+  cursor: pointer;
+  margin-left: 148px;
+  text-transform: uppercase;
+}
+body .can_do {
+  margin-bottom: 60px;
+}
+body .content_help .card .img1 {
+  background-image: url("../image/dog_meat/img1.jpg");
+}
+body .content_help .card .img2 {
+  background-image: url("../image/dog_meat/img2.jpg");
+}
+body .content_help .card .img3 {
+  background-image: url("../image/dog_meat/img3.jpg");
+}
+body .login {
+  height: 600px;
+  background-color: #2c2278;
+  padding-left: 197.5px;
+  padding-top: 146px;
+  background-image: url("../image/dog_meat/upper-bg-4.png");
+  background-repeat: no-repeat;
+  background-size: 1430px;
+  background-position-x: 223px;
+  background-position-y: -1px;
+  position: relative;
+  z-index: 1;
+}
+body .login::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, #f000 0, #2c2278 65%);
+}
+body .login .box_form {
+  width: 400px;
+  z-index: 2;
+  position: relative;
+}
+body .login .box_form h2 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: white;
+  padding-bottom: 10px;
+  line-height: 40px;
+  margin-bottom: 42px;
+}
+body .login .box_form form {
+  padding: 0 20px;
+}
+body .login .box_form form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  line-height: 24px;
+}
+body .login .box_form form input {
+  padding: 8px;
+  width: 291px;
+  height: 19px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: none;
+}
+body .login .box_form form input::placeholder {
+  color: #e0dddd;
+}
+body .login .box_form form .button {
+  padding: 12px 24px;
+  width: 170px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 12px;
+  margin: 0;
+  margin-top: 24px;
+}
+body footer {
+  height: 288px;
+  padding-bottom: 48px;
+  background-color: #313141;
+  display: flex;
+  justify-content: space-around;
+}
+body footer .box {
+  max-width: 1000px;
+  display: flex;
+}
+body footer .box .footerbox1 {
+  width: 333px;
+  height: 100%;
+  padding-top: 24px;
+  padding-left: 15px;
+}
+body footer .box .footerbox1 .menu li {
+  list-style: none;
+  display: inline;
+  margin-right: 15px;
+}
+body footer .box .footerbox1 .menu li a {
+  font-family: "Ubuntu", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+body footer .box .footerbox1 .menu li a:hover {
+  color: #6BB547;
+}
+body footer .box .footerbox1 .adress {
+  margin-top: 123px;
+  margin-bottom: 16px;
+}
+body footer .box .footerbox1 .adress li {
+  font-family: "Ubuntu", serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: white;
+  line-height: 14.4px;
+}
+body footer .box .footerbox1 p {
+  font-family: "Ubuntu", serif;
+  font-size: 8px;
+  font-weight: 400;
+  color: white;
+}
+body footer .box .footerbox2 {
+  width: 333px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+body footer .box .footerbox2 a {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  margin-top: 165px;
+  margin-right: 7px;
+  opacity: 70%;
+}
+body footer .box .footerbox2 a:hover {
+  opacity: 100%;
+}
+body footer .box .footerbox2 a.icon_facebook {
+  background-image: url("../../image/icons-social-facebook.png");
+}
+body footer .box .footerbox2 a.icon_twitter {
+  background-image: url("../../image/icons-social-twitter.png");
+}
+body footer .box .footerbox2 a.icon_instagram {
+  background-image: url("../../image/icons-social-instagram.png");
+}
+body footer .box .footerbox3 {
+  width: 220px;
+  height: 100%;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 110px;
+  justify-content: space-between;
+}
+body footer .box .footerbox3 p {
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 14.5px;
+}
+body footer .box .footerbox3 p span {
+  color: #FFDE00;
+  display: block;
+  line-height: 14.5px;
+}
+body footer .box .footerbox3 button {
+  width: 100%;
+  height: 46.8px;
+  border-radius: 5px;
+  background-color: #FFDE00;
+  border: none;
+  font-family: "Ubuntu", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #2D2378;
+  cursor: pointer;
+}
+body footer .box .footerbox3 button:hover {
+  color: white;
+  background-color: #FFC800;
+}
+body footer .box .footerbox3 .content_footer {
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+body footer .box .footerbox3 .content_footer a {
+  font-family: "Ubuntu", serif;
+  color: rgba(255, 255, 255, 0.38);
+  text-decoration: none;
+}
+body footer .box .footerbox3 .content_footer a:hover {
+  color: white;
+}
+body footer .box .footerbox3 .content_footer .designerwith {
+  font-size: 8px;
+  margin-right: 29px;
+  margin-bottom: 2px;
+}
+body footer .box .footerbox3 .content_footer .designerwith span {
+  font-size: 10px;
+  margin-bottom: 16px;
+  display: block;
+  padding-top: 2px;
+}
+body footer .box .footerbox3 .content_footer .return {
+  margin-bottom: 45px;
+  font-size: 14px;
+}
+body footer .box .footerbox3 .social {
+  position: fixed;
+  bottom: 54px;
+  left: 0;
+  z-index: 2;
+}
+body footer .box .footerbox3 .social a {
+  width: 38px;
+  height: 32px;
+  display: block;
+  background-size: cover;
+}
+body footer .box .footerbox3 .social .facebook {
+  background-image: url("../../image/icons-share-facebook.png");
+  border-top-right-radius: 10px;
+}
+body footer .box .footerbox3 .social .twitter {
+  background-image: url("../../image/icons-share-twitter.png");
 }
 
 /*# sourceMappingURL=dog_meat.css.map */
