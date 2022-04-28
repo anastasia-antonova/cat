@@ -6,6 +6,7 @@
 @import "mixins/text";
 @import "mixins/foter_banner";
 @import "mixins/footer";
+@import "mixins/tree_images_squear_slider";
 
 body {
   padding-top: 63px;
@@ -18,7 +19,11 @@ body {
 
   @include footerBanner("../../image/baby_cat_1799835_640.adb0be869894bed5411020cb98d292f5.jpg");
 
+  @include tree_images_squear_slider;
+
   @include footer;
+
+
 
 }
 

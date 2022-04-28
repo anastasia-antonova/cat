@@ -5,7 +5,7 @@
 @import "mixins/banner";
 @import "mixins/foter_banner";
 @import "mixins/footer";
-@import "mixins/title_dog.scss";
+@import "mixins/tree_images_squear_slider.scss";
 
 
 body {
@@ -271,13 +271,15 @@ body {
 
   }
 
-  @include title_dog;
+  @include tree_images_squear_slider;
 
   .can_do {
     margin-bottom: 60px;
 
     &.take_action {
+
       .content_help {
+
         .img1 {
           background-image: url("../image/dog_meat/blogmain-korean-dog.jpg");
         }
@@ -392,5 +394,6 @@ body {
   }
 
   @include footer;
+
 
 }

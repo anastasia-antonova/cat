@@ -1,0 +1,39 @@
+@mixin can_do {
+  .can_do {
+    margin-bottom: 60px;
+
+    &.take_action {
+
+      .content_help {
+
+        .img1 {
+          background-image: url("../../image/dog_meat/blogmain-korean-dog.jpg");
+        }
+
+        .img2 {
+          background-image: url("../../image/dog_meat/blog-cage3.jpg");
+        }
+
+        .img3 {
+          background-image: url("../../image/dog_meat/blogbali.jpg");
+        }
+      }
+    }
+
+    &.discover_more {
+      .content_help {
+        .img1 {
+          background-image: url("../../image/dog_meat/img1.jpg");
+        }
+
+        .img2 {
+          background-image: url("../../image/dog_meat/img2.jpg");
+        }
+
+        .img3 {
+          background-image: url("../../image/dog_meat/img3.jpg");
+        }
+      }
+    }
+  }
+}

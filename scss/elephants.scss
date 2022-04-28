@@ -6,6 +6,8 @@
 @import "mixins/content_row.scss";
 @import "mixins/how_help.scss";
 
+
+
 body {
   padding-top: 63px;
 
@@ -63,6 +65,23 @@ body {
 
   @include content_row;
   @include how_help;
+
+  .how_help {
+
+    .content_help {
+
+      .card {
+
+        img {
+          border-radius: 50%;
+        }
+        h4 {
+          min-height: 84px;
+        }
+      }
+    }
+  }
+
 
 
 
