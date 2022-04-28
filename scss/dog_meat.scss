@@ -59,7 +59,6 @@ body {
     margin-bottom: 28px;
   }
 
-
   @include header();
   @include banner("../../image/dog_meat/dog-meat-campaign.png");
 
@@ -242,104 +241,7 @@ body {
     }
   }
 
-  .can_do {
-    height: 600px;
-    padding: 50px 197.500px;
-    margin-bottom: 60px;
-
-    .titl {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 50px;
-
-      h3 {
-        font-family: 'Ubuntu', serif;
-        font-size: 36px;
-        font-weight: 700;
-        color: #2C2278;
-        padding-bottom: 10px;
-        line-height: 50px;
-        margin-bottom: 30px;
-      }
-      a{
-        color: #6BB547;
-        text-decoration: none;
-        font-family: 'Ubuntu', serif;
-        font-size: 16px;
-        font-weight: 400;
-
-      }
-    }
-
-    .content_help {
-
-      .card {
-        border: 1px solid #f3f3f3;
-        height: 496px;
-        padding: 0;
-
-        p {
-          text-align: left;
-          font-family: 'Ubuntu', serif;
-          font-size: 16px;
-          font-weight: 700;
-          color: #2C2278;
-          line-height: 26px;
-          margin-left: 26px;
-          margin-bottom: 50px;
-        }
-
-        h4 {
-          font-family: 'Ubuntu', serif;
-          font-size: 14px;
-          font-weight: 400;
-          font-style: italic;
-          color: #2C2278;
-          text-transform: uppercase;
-          margin: 26px;
-
-        }
-
-        .img1, .img2, .img3 {
-          width: 320px;
-          height: 248px;
-          background-size: cover;
-        }
-
-        .img1 {
-          background-image: url("../image/dog_meat/blogmain-korean-dog.jpg");
-        }
-
-        .img2 {
-          background-image: url("../image/dog_meat/blog-cage3.jpg");
-        }
-
-        .img3 {
-          background-image: url("../image/dog_meat/blogbali..jpg");
-        }
-
-        button {
-          font-family: 'Ubuntu', serif;
-          font-size: 14px;
-          font-weight: 700;
-          padding: 16px 24px;
-          border-radius: 5px;
-          border: none;
-          background-color: #FFDE00;
-          display: block;
-          cursor: pointer;
-          margin-left: 148px;
-          text-transform: uppercase;
-        }
-      }
-
-    }
-
-
-  }
-
   @include footerBanner("../../image/dog_meat/upper-bg-5.png");
-
 
   .footer_banner {
     margin-top: 110px;
@@ -373,22 +275,36 @@ body {
 
   .can_do {
     margin-bottom: 60px;
-  }
 
-  .content_help {
+    &.take_action {
+      .content_help {
+        .img1 {
+          background-image: url("../image/dog_meat/blogmain-korean-dog.jpg");
+        }
 
-    .card {
+        .img2 {
+          background-image: url("../image/dog_meat/blog-cage3.jpg");
+        }
 
-      .img1 {
-        background-image: url("../image/dog_meat/img1.jpg");
+        .img3 {
+          background-image: url("../image/dog_meat/blogbali.jpg");
+        }
       }
+    }
 
-      .img2 {
-        background-image: url("../image/dog_meat/img2.jpg");
-      }
+    &.discover_more {
+      .content_help {
+        .img1 {
+          background-image: url("../image/dog_meat/img1.jpg");
+        }
 
-      .img3 {
-        background-image: url("../image/dog_meat/img3.jpg");
+        .img2 {
+          background-image: url("../image/dog_meat/img2.jpg");
+        }
+
+        .img3 {
+          background-image: url("../image/dog_meat/img3.jpg");
+        }
       }
     }
   }
@@ -422,7 +338,6 @@ body {
       width: 400px;
       z-index: 2;
       position: relative;
-
 
       h2 {
         font-family: "Lilita One", sans-serif;
