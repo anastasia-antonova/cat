@@ -5,6 +5,9 @@
 @import "mixins/banner";
 @import "mixins/content_row.scss";
 @import "mixins/how_help.scss";
+@import "mixins/tree_images_squear_slider.scss";
+@import "mixins/foter_banner";
+@import "mixins/login";
 
 
 
@@ -68,6 +71,7 @@ body {
 
   .how_help {
 
+
     .content_help {
 
       .card {
@@ -82,8 +86,91 @@ body {
     }
   }
 
+  @include tree_images_squear_slider;
+
+  .tree_images_squear_slider {
+    margin-bottom: 60px;
+
+    &.take_action {
+
+      .content_help {
+
+        .img1 {
+          background-image: url("../image/elephant/blogextra-combo-thandi-elephant.jpg");
+        }
+
+        .img2 {
+          background-image: url("../image/elephant/blogmain-bubbles.jpg");
+        }
+
+        .img3 {
+          background-image: url("../image/elephant/blogmain-two-elephants.jpg");
+        }
+      }
+    }
+
+    &.discover_more {
+      .content_help {
+
+        .img1 {
+          background-image: url("../image/elephant/blogextra-combo-thandi-elephant.jpg");
+        }
+
+        .img2 {
+          background-image: url("../image/elephant/discover_2img.jpg");
+        }
+
+        .img3 {
+          background-image: url("../image/elephant/blogmain-two-elephants.jpg");
+        }
+      }
+    }
+
+  }
+
+  @include footerBanner("../../image/elephant/footer_banner_elephant.png");
+
+  .footer_banner {
+    height: 544px;
+    background-size: 1100px;
+    background-position-x: -97px;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to right, #f000 0, #0f0b75 60%);
+    }
+
+    .text_footer {
+      padding-top: 146px;
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 16px;
+      }
+
+      button {
+        margin-top: 24px;
+      }
+    }
+
+  }
+
+  @include login;
+
+  .login{
+    background-image: url("../image/elephant/login.png");
+    background-size: 1000px;
+  }
+
+
+  }
 
 
 
 
-}

@@ -690,11 +690,13 @@ body .content_row .boxright .boxinf p {
   line-height: 21px;
 }
 body .how_help {
-  height: 600px;
   background-color: #F5F4F9;
-  padding: 50px 197.5px;
 }
-body .how_help h2 {
+body .how_help .page_content {
+  max-width: 1000px;
+  margin: 0 auto 34px;
+}
+body .how_help .page_content h2 {
   font-family: "Ubuntu", serif;
   font-size: 40px;
   font-weight: 700;
@@ -704,20 +706,22 @@ body .how_help h2 {
   line-height: 54px;
   margin-bottom: 44px;
 }
-body .how_help .content_help {
+body .how_help .page_content .content_help {
   display: flex;
   justify-content: space-between;
 }
-body .how_help .content_help .card {
-  width: 320px;
-  padding: 0 4px;
+body .how_help .page_content .content_help .card {
+  min-width: calc(33.3% - 8px);
+  max-width: calc(33.3% - 8px);
+  border: 1px solid #f3f3f3;
+  padding: 0 0 26px;
 }
-body .how_help .content_help .card img {
+body .how_help .page_content .content_help .card img {
   width: 200px;
   margin: 0 60px;
   margin-bottom: 28px;
 }
-body .how_help .content_help .card h4 {
+body .how_help .page_content .content_help .card h4 {
   font-family: "Ubuntu", serif;
   font-size: 20px;
   font-weight: 700;
@@ -727,7 +731,8 @@ body .how_help .content_help .card h4 {
   margin-bottom: 8px;
   line-height: 28px;
 }
-body .how_help .content_help .card p {
+body .how_help .page_content .content_help .card p {
+  min-height: 42px;
   text-align: center;
   font-family: "Ubuntu", serif;
   font-size: 14px;
@@ -736,7 +741,7 @@ body .how_help .content_help .card p {
   line-height: 21px;
   margin-bottom: 16px;
 }
-body .how_help .content_help .card button {
+body .how_help .page_content .content_help .card button {
   font-family: "Ubuntu", serif;
   font-size: 14px;
   font-weight: 700;
@@ -780,6 +785,7 @@ body .footer_banner .text_footer h2 {
   font-weight: 400;
   color: #fff;
   margin-bottom: 32px;
+  line-height: 40px;
 }
 body .footer_banner .text_footer button {
   padding: 16px 24px;
@@ -909,39 +915,38 @@ body .tree_images_squear_slider .content_help .card button {
   margin-left: 148px;
   text-transform: uppercase;
 }
-body .can_do {
+body .tree_images_squear_slider {
   margin-bottom: 60px;
 }
-body .can_do.take_action .content_help .img1 {
+body .tree_images_squear_slider.take_action .content_help .img1 {
   background-image: url("../image/dog_meat/blogmain-korean-dog.jpg");
 }
-body .can_do.take_action .content_help .img2 {
+body .tree_images_squear_slider.take_action .content_help .img2 {
   background-image: url("../image/dog_meat/blog-cage3.jpg");
 }
-body .can_do.take_action .content_help .img3 {
+body .tree_images_squear_slider.take_action .content_help .img3 {
   background-image: url("../image/dog_meat/blogbali.jpg");
 }
-body .can_do.discover_more .content_help .img1 {
+body .tree_images_squear_slider.discover_more .content_help .img1 {
   background-image: url("../image/dog_meat/img1.jpg");
 }
-body .can_do.discover_more .content_help .img2 {
+body .tree_images_squear_slider.discover_more .content_help .img2 {
   background-image: url("../image/dog_meat/img2.jpg");
 }
-body .can_do.discover_more .content_help .img3 {
+body .tree_images_squear_slider.discover_more .content_help .img3 {
   background-image: url("../image/dog_meat/img3.jpg");
 }
 body .login {
-  height: 600px;
+  height: calc(100vh - 63px);
   background-color: #2c2278;
-  padding-left: 197.5px;
-  padding-top: 146px;
-  background-image: url("../image/dog_meat/upper-bg-4.png");
+  background-image: url("../../image/dog_meat/upper-bg-4.png");
   background-repeat: no-repeat;
-  background-size: 1430px;
-  background-position-x: 223px;
-  background-position-y: -1px;
+  background-size: contain;
+  background-position-x: right;
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
 }
 body .login::after {
   content: "";
@@ -953,7 +958,9 @@ body .login::after {
   background: linear-gradient(to left, #f000 0, #2c2278 65%);
 }
 body .login .box_form {
-  width: 400px;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
   z-index: 2;
   position: relative;
 }
@@ -995,6 +1002,9 @@ body .login .box_form form .button {
   line-height: 12px;
   margin: 0;
   margin-top: 24px;
+}
+body .login {
+  background-position-x: 14px;
 }
 body footer {
   height: 288px;

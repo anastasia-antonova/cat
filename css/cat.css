@@ -623,6 +623,7 @@ body .footer_banner .text_footer h2 {
   font-weight: 400;
   color: #fff;
   margin-bottom: 32px;
+  line-height: 40px;
 }
 body .footer_banner .text_footer button {
   padding: 16px 24px;

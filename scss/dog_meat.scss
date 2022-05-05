@@ -6,6 +6,8 @@
 @import "mixins/foter_banner";
 @import "mixins/footer";
 @import "mixins/tree_images_squear_slider.scss";
+@import "mixins/how_help";
+@import "mixins/login";
 
 
 body {
@@ -169,77 +171,8 @@ body {
 
   }
 
-  .how_help {
-    height: 600px;
-    background-color: #F5F4F9;
-    padding: 50px 197.500px;
 
-    h2 {
-      font-family: 'Ubuntu', serif;
-      font-size: 40px;
-      font-weight: 700;
-      color: #2C2278;
-      border-bottom: 2px solid #2C2278;
-      padding-bottom: 10px;
-      line-height: 54px;
-      margin-bottom: 44px;
-
-    }
-
-    .content_help {
-      display: flex;
-      justify-content: space-between;
-
-      .card {
-        width: 320px;
-        padding: 0 4px;
-
-        img {
-          width: 200px;
-          margin: 0 60px;
-          margin-bottom: 28px;
-        }
-
-        h4 {
-          font-family: 'Ubuntu', serif;
-          font-size: 20px;
-          font-weight: 700;
-          color: #2C2278;
-          display: block;
-          text-align: center;
-          margin-bottom: 8px;
-          line-height: 28px;
-
-        }
-
-        p {
-          text-align: center;
-          font-family: 'Ubuntu', serif;
-          font-size: 14px;
-          font-weight: 400;
-          color: #2C2278;
-          line-height: 21px;
-          margin-bottom: 16px;
-        }
-
-        button {
-          font-family: 'Ubuntu', serif;
-          font-size: 14px;
-          font-weight: 700;
-          padding: 16px 24px;
-          border-radius: 5px;
-          border: none;
-          background-color: #FFDE00;
-          display: block;
-          margin: auto;
-          cursor: pointer;
-        }
-
-
-      }
-
-    }
-  }
+  @include how_help;
 
   @include footerBanner("../../image/dog_meat/upper-bg-5.png");
 
@@ -273,7 +206,7 @@ body {
 
   @include tree_images_squear_slider;
 
-  .can_do {
+  .tree_images_squear_slider {
     margin-bottom: 60px;
 
     &.take_action {
@@ -296,6 +229,7 @@ body {
 
     &.discover_more {
       .content_help {
+
         .img1 {
           background-image: url("../image/dog_meat/img1.jpg");
         }
@@ -311,86 +245,11 @@ body {
     }
   }
 
+  @include login;
+
   .login {
-    height: 600px;
-    background-color: #2c2278;
-    padding-left: 197.500px;
-    padding-top: 146px;
-    background-image: url("../image/dog_meat/upper-bg-4.png");
-    background-repeat: no-repeat;
-    background-size: 1430px;
-    background-position-x: 223px;
-    background-position-y: -1px;
-    position: relative;
-    z-index: 1;
 
-    &::after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: linear-gradient(to left, #f000 0,#2c2278 65%);
-
-    }
-
-    .box_form {
-
-      width: 400px;
-      z-index: 2;
-      position: relative;
-
-      h2 {
-        font-family: "Lilita One", sans-serif;
-        font-size: 35px;
-        font-weight: 400;
-        color: white;
-        padding-bottom: 10px;
-        line-height: 40px;
-        margin-bottom: 42px;
-      }
-
-      form {
-        padding: 0 20px;
-
-        label {
-          display: block;
-          font-size: 14px;
-          font-weight: 400;
-          color: white;
-          line-height: 24px;
-
-        }
-
-        input {
-          padding: 8px;
-          width: 291px;
-          height: 19px;
-          margin-bottom: 16px;
-          border-radius: 4px;
-          border: none;
-
-          &::placeholder {
-            color: #e0dddd;
-          }
-
-
-        }
-
-        .button {
-          padding: 12px 24px;
-          width: 170px;
-          font-size: 14px;
-          font-weight: 700;
-          line-height: 12px;
-          margin: 0;
-          margin-top: 24px;
-        }
-      }
-
-    }
-
+    background-position-x: 14px;
   }
 
   @include footer;
