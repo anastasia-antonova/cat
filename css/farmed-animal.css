@@ -610,16 +610,16 @@ body .banner .image_banner h1 {
 body .banner .image_banner {
   background-position-y: -286px;
 }
-body .text {
+body .page_content_text {
   width: 100%;
   padding: 75px 0;
 }
-body .text .text_in {
+body .page_content_text .text_in {
   width: 970px;
   padding: 0 15px;
   margin: auto;
 }
-body .text .text_in h2 {
+body .page_content_text .text_in h2 {
   color: #2D2378;
   font-family: "Ubuntu", serif;
   font-weight: 700;
@@ -627,7 +627,7 @@ body .text .text_in h2 {
   padding-bottom: 28px;
   margin-bottom: 8px;
 }
-body .text .text_in p {
+body .page_content_text .text_in p {
   font-size: 16px;
   font-weight: 400;
   font-family: "Ubuntu", serif;
@@ -635,7 +635,10 @@ body .text .text_in p {
   line-height: 24px;
   margin-bottom: 16px;
 }
-body .text .text_in h4 {
+body .page_content_text {
+  padding-bottom: 0;
+}
+body .page_content_text .text_in h4 {
   color: #2D2378;
   font-family: "Ubuntu", serif;
   font-weight: 700;
@@ -644,41 +647,44 @@ body .text .text_in h4 {
   margin-bottom: 8px;
   text-align: center;
 }
-body .text .text_in p {
+body .page_content_text .text_in p {
   font-weight: 700;
 }
-body .text .text_in h2 {
+body .page_content_text .text_in h2 {
   text-align: center;
   margin-top: 56px;
+  margin-bottom: 60px;
 }
-body .text .more_content {
+body .page_content_text .more_content {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 72px;
+  margin-bottom: 30px;
 }
-body .text .more_content .kard {
+body .page_content_text .more_content .kard {
   width: 50%;
   display: flex;
   margin: 36px 0;
 }
-body .text .more_content .kard img {
+body .page_content_text .more_content .kard img {
   width: 117px;
   height: 117px;
   border-radius: 50%;
 }
-body .text .more_content .kard .text_kard {
+body .page_content_text .more_content .kard .text_kard {
   width: 100%;
   padding: 15px 90px 15px 15px;
 }
-body .text .more_content .kard .text_kard h3 {
+body .page_content_text .more_content .kard .text_kard h3 {
+  min-height: 46px;
   font-family: "Ubuntu", serif;
   color: #2D2378;
   font-size: 23px;
+  font-weight: 700;
   margin-bottom: 24px;
 }
-body .text .more_content .kard .text_kard button {
+body .page_content_text .more_content .kard .text_kard button {
   width: 100%;
   height: 49px;
   font-family: "Ubuntu", serif;
@@ -689,6 +695,232 @@ body .text .more_content .kard .text_kard button {
   border: none;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
+}
+body .page_content_text .more_content .kard .text_kard button:hover {
+  background-color: #3BAD29;
+}
+body .footer_banner {
+  width: 100%;
+  height: 448px;
+  background-color: #01001a;
+  background-image: url("../../image/farmed-animal/chicks.jpg");
+  background-repeat: no-repeat;
+  background-size: 855px;
+  position: relative;
+}
+body .footer_banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #f000 0, #1500ff00 40%, #01001a 60%);
+}
+body .footer_banner .text_footer {
+  width: 500px;
+  height: 352px;
+  margin-left: 712px;
+  padding: 48px 0;
+  position: relative;
+  z-index: 1;
+}
+body .footer_banner .text_footer h2 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 32px;
+  line-height: 40px;
+}
+body .footer_banner .text_footer button {
+  padding: 16px 24px;
+  font-family: "Ubuntu", serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #2d2378;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffde00;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+body .footer_banner .text_footer button:hover {
+  background-color: #FFC800;
+  color: #fff;
+}
+body .footer_banner .text_footer p {
+  color: white;
+  font-family: "Ubuntu", serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+body footer {
+  height: 288px;
+  padding-bottom: 48px;
+  background-color: #313141;
+  display: flex;
+  justify-content: space-around;
+}
+body footer .box {
+  max-width: 1000px;
+  display: flex;
+}
+body footer .box .footerbox1 {
+  width: 333px;
+  height: 100%;
+  padding-top: 24px;
+  padding-left: 15px;
+}
+body footer .box .footerbox1 .menu li {
+  list-style: none;
+  display: inline;
+  margin-right: 15px;
+}
+body footer .box .footerbox1 .menu li a {
+  font-family: "Ubuntu", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+body footer .box .footerbox1 .menu li a:hover {
+  color: #6BB547;
+}
+body footer .box .footerbox1 .adress {
+  margin-top: 123px;
+  margin-bottom: 16px;
+}
+body footer .box .footerbox1 .adress li {
+  font-family: "Ubuntu", serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: white;
+  line-height: 14.4px;
+}
+body footer .box .footerbox1 p {
+  font-family: "Ubuntu", serif;
+  font-size: 8px;
+  font-weight: 400;
+  color: white;
+}
+body footer .box .footerbox2 {
+  width: 333px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+body footer .box .footerbox2 a {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  margin-top: 165px;
+  margin-right: 7px;
+  opacity: 70%;
+}
+body footer .box .footerbox2 a:hover {
+  opacity: 100%;
+}
+body footer .box .footerbox2 a.icon_facebook {
+  background-image: url("../../image/icons-social-facebook.png");
+}
+body footer .box .footerbox2 a.icon_twitter {
+  background-image: url("../../image/icons-social-twitter.png");
+}
+body footer .box .footerbox2 a.icon_instagram {
+  background-image: url("../../image/icons-social-instagram.png");
+}
+body footer .box .footerbox3 {
+  width: 220px;
+  height: 100%;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 110px;
+  justify-content: space-between;
+}
+body footer .box .footerbox3 p {
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 14.5px;
+}
+body footer .box .footerbox3 p span {
+  color: #FFDE00;
+  display: block;
+  line-height: 14.5px;
+}
+body footer .box .footerbox3 button {
+  width: 100%;
+  height: 46.8px;
+  border-radius: 5px;
+  background-color: #FFDE00;
+  border: none;
+  font-family: "Ubuntu", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #2D2378;
+  cursor: pointer;
+}
+body footer .box .footerbox3 button:hover {
+  color: white;
+  background-color: #FFC800;
+}
+body footer .box .footerbox3 .content_footer {
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+body footer .box .footerbox3 .content_footer a {
+  font-family: "Ubuntu", serif;
+  color: rgba(255, 255, 255, 0.38);
+  text-decoration: none;
+}
+body footer .box .footerbox3 .content_footer a:hover {
+  color: white;
+}
+body footer .box .footerbox3 .content_footer .designerwith {
+  font-size: 8px;
+  margin-right: 29px;
+  margin-bottom: 2px;
+}
+body footer .box .footerbox3 .content_footer .designerwith span {
+  font-size: 10px;
+  margin-bottom: 16px;
+  display: block;
+  padding-top: 2px;
+}
+body footer .box .footerbox3 .content_footer .return {
+  margin-bottom: 45px;
+  font-size: 14px;
+}
+body footer .box .footerbox3 .social {
+  position: fixed;
+  bottom: 54px;
+  left: 0;
+  z-index: 2;
+}
+body footer .box .footerbox3 .social a {
+  width: 38px;
+  height: 32px;
+  display: block;
+  background-size: cover;
+}
+body footer .box .footerbox3 .social .facebook {
+  background-image: url("../../image/icons-share-facebook.png");
+  border-top-right-radius: 10px;
+}
+body footer .box .footerbox3 .social .twitter {
+  background-image: url("../../image/icons-share-twitter.png");
 }
 
 /*# sourceMappingURL=farmed-animal.css.map */

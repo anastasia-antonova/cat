@@ -3,7 +3,7 @@
 @import 'fonts/lilia-one';
 @import "mixins/header";
 @import "mixins/banner";
-@import "mixins/text";
+@import "mixins/page_content_text";
 @import "mixins/foter_banner";
 @import "mixins/footer";
 @import "mixins/tree_images_squear_slider";
@@ -15,7 +15,7 @@ body {
 
   @include banner("../../image/community-cats.jpg");
 
-  @include text;
+  @include page_content_text;
 
   @include footerBanner("../../image/baby_cat_1799835_640.adb0be869894bed5411020cb98d292f5.jpg");
 
