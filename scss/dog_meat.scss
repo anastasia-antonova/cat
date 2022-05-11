@@ -7,7 +7,7 @@
 @import "mixins/footer";
 @import "mixins/tree_images_squear_slider.scss";
 @import "mixins/how_help";
-@import "mixins/login";
+@import "mixins/container_bg_form";
 
 
 body {
@@ -245,9 +245,9 @@ body {
     }
   }
 
-  @include login;
+  @include container_bg_form;
 
-  .login {
+  .container_bg_form {
 
     background-position-x: 350px;
   }

@@ -7,7 +7,7 @@
 @import "mixins/how_help.scss";
 @import "mixins/tree_images_squear_slider.scss";
 @import "mixins/foter_banner";
-@import "mixins/login";
+@import "mixins/container_bg_form";
 
 
 
@@ -161,15 +161,13 @@ body {
 
   }
 
-  @include login;
+  @include container_bg_form;
 
-  .login{
+  .container_bg_form{
     background-image: url("../image/elephant/login.png");
     background-size: 1000px;
   }
-
-
-  }
+}
 
 
 
