@@ -773,7 +773,6 @@ body .footer_banner::after {
 }
 body .footer_banner .text_footer {
   width: 500px;
-  height: 352px;
   margin-left: 712px;
   padding: 48px 0;
   position: relative;
@@ -798,6 +797,7 @@ body .footer_banner .text_footer button {
   background-color: #ffde00;
   cursor: pointer;
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 body .footer_banner .text_footer button:hover {
   background-color: #FFC800;
@@ -936,7 +936,7 @@ body .tree_images_squear_slider.discover_more .content_help .img2 {
 body .tree_images_squear_slider.discover_more .content_help .img3 {
   background-image: url("../image/dog_meat/img3.jpg");
 }
-body .login {
+body .container_bg_form {
   height: calc(100vh - 63px);
   background-color: #2c2278;
   background-image: url("../../image/dog_meat/upper-bg-4.png");
@@ -948,7 +948,7 @@ body .login {
   display: flex;
   align-items: center;
 }
-body .login::after {
+body .container_bg_form::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -957,14 +957,18 @@ body .login::after {
   left: 0;
   background: linear-gradient(to left, #f000 0, #2c2278 65%);
 }
-body .login .box_form {
+body .container_bg_form .box_container {
   width: 100%;
   max-width: 1000px;
   margin: auto;
   z-index: 2;
   position: relative;
+  display: flex;
 }
-body .login .box_form h2 {
+body .container_bg_form .box_container .box {
+  width: 50%;
+}
+body .container_bg_form .box_container .box h2 {
   font-family: "Lilita One", sans-serif;
   font-size: 35px;
   font-weight: 400;
@@ -973,17 +977,17 @@ body .login .box_form h2 {
   line-height: 40px;
   margin-bottom: 42px;
 }
-body .login .box_form form {
+body .container_bg_form .box_container .box form {
   padding: 0 20px;
 }
-body .login .box_form form label {
+body .container_bg_form .box_container .box form label {
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: white;
   line-height: 24px;
 }
-body .login .box_form form input {
+body .container_bg_form .box_container .box form input {
   padding: 8px;
   width: 291px;
   height: 19px;
@@ -991,10 +995,10 @@ body .login .box_form form input {
   border-radius: 4px;
   border: none;
 }
-body .login .box_form form input::placeholder {
+body .container_bg_form .box_container .box form input::placeholder {
   color: #e0dddd;
 }
-body .login .box_form form .button {
+body .container_bg_form .box_container .box form .button {
   padding: 12px 24px;
   width: 170px;
   font-size: 14px;
@@ -1003,7 +1007,7 @@ body .login .box_form form .button {
   margin: 0;
   margin-top: 24px;
 }
-body .login {
+body .container_bg_form {
   background-position-x: 350px;
 }
 body footer {
