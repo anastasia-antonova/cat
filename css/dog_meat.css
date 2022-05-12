@@ -773,7 +773,6 @@ body .footer_banner::after {
 }
 body .footer_banner .text_footer {
   width: 500px;
-  height: 352px;
   margin-left: 712px;
   padding: 48px 0;
   position: relative;
@@ -798,6 +797,7 @@ body .footer_banner .text_footer button {
   background-color: #ffde00;
   cursor: pointer;
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 body .footer_banner .text_footer button:hover {
   background-color: #FFC800;

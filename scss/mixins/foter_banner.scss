@@ -21,7 +21,6 @@
 
     .text_footer {
       width: 500px;
-      height: 352px;
       margin-left: 712px;
       padding: 48px 0;
       position: relative;
@@ -47,6 +46,7 @@
         background-color: rgb(255, 222, 0);
         cursor: pointer;
         margin-bottom: 24px;
+        text-transform: uppercase;
 
         &:hover {
           background-color: #FFC800;
